@@ -9,7 +9,7 @@ A simple tool to document and label fuse boxes.
 
 ## Try it
 
-
+### [Demo](https://alexadam.github.io/demos/fuse-box-labels/index.html)
 
 ## Features
 
@@ -35,4 +35,4 @@ npm install
 npm run dev
 ```
 
-Open a browser and go to [](http://127.0.0.1:3000/)
+Open a browser and go to [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
