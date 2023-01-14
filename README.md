@@ -3,9 +3,9 @@
 
 A simple tool to document and label fuse boxes.
 
-<img src="https://github.com/alexadam/fuse-box-labels/blob/master/imgs/fuse-box-labels.gif?raw=true" width="800">
+<img src="https://github.com/alexadam/fuse-box-labels/blob/main/imgs/fuse-box-labels.gif?raw=true" width="800">
 
-<img src="https://github.com/alexadam/fuse-box-labels/blob/master/imgs/fuse-box-labels.png?raw=true" width="800">
+<img src="https://github.com/alexadam/fuse-box-labels/blob/main/imgs/fuse-box-labels.png?raw=true" width="800">
 
 ## Try it
 
