@@ -178,12 +178,17 @@ Notes:
 
             doc.text(title, 1, 1);
 
+            let xFactor = 1
             let index = 0
 
             for (const fuseData of state) {
               const elem = document.getElementById('fuse-' + fuseData.id)
               const bbox = elem!.getBoundingClientRect();
-
+              if (index === 0) {
+                xFactor = bbox.x
+              }
+              
+              
               const svgAsText = new XMLSerializer().serializeToString(document.getElementById('svg-' + fuseData.id)!);
 
 
@@ -215,7 +220,7 @@ Notes:
               v.start();
               const base64 = canvas.toDataURL("image/png");
 
-              doc.addImage(base64, 'png', bbox.x / 68, 3, svgWidth, 4.5)
+              doc.addImage(base64, 'png', 1 + (bbox.x - xFactor) / 67, 3, svgWidth, 4.5)
 
               // INFO
               doc.setFont('sans serif');
@@ -234,7 +239,7 @@ Notes:
               // fuse label
               doc.setFont("", 'bold');
               doc.setFontSize(9);
-              doc.text(fuseData.topLabel || '', bbox.x / 70 + 0.2, 8)
+              doc.text(fuseData.topLabel || '', 1 + (bbox.x - xFactor) / 67 + 0.2, 8)
 
               index++
             }
